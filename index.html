@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sakshar Jain — Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+
+<div class="shell">
+
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-header">EXPLORER</div>
+    <ul class="file-list">
+      <li class="file-item"><a href="#hero" class="nav-link"><span class="dot" style="color:var(--fn)"></span>hero.tsx</a></li>
+      <li class="file-item"><a href="#about" class="nav-link"><span class="dot" style="color:var(--kw)"></span>about.cpp</a></li>
+      <li class="file-item"><a href="#skills" class="nav-link"><span class="dot" style="color:var(--const)"></span>skills.json</a></li>
+      <li class="file-item"><a href="#projects" class="nav-link"><span class="dot" style="color:var(--str)"></span>projects.md</a></li>
+      <li class="file-item"><a href="#contact" class="nav-link"><span class="dot" style="color:var(--tag)"></span>contact.sh</a></li>
+    </ul>
+    <div class="sidebar-footer">
+      <span class="status-dot"></span>online — open to internships
+    </div>
+  </nav>
+
+  <main class="main">
+
+    <div class="tabbar">
+      <div class="dots"><span></span><span></span><span></span></div>
+      <div class="crumb">sakshar-jain <b>/</b> <span id="crumbFile">portfolio</span></div>
+    </div>
+
+    <!-- HERO -->
+    <section id="hero" class="hero" style="position:relative;">
+      <div class="eyebrow">// whoami</div>
+      <h1>
+        <span class="kw">const developer =</span>
+        Sakshar&nbsp;Jain
+      </h1>
+      <div class="type-line" id="typeLine"></div>
+      <p class="desc">
+        Second-year B.Tech student (CSE — AI &amp; ML) at GL Bajaj Institute of Technology &amp; Management.
+        I build things with clean logic and cleaner code — from C++ fundamentals to full front-end interfaces.
+      </p>
+      <div class="cta-row">
+        <a href="#projects" class="btn primary">View Projects →</a>
+        <a href="#contact" class="btn ghost">Get in Touch</a>
+      </div>
+      <div class="scroll-hint"><span class="bar"></span>scroll</div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2 class="section-title">01 · about.cpp</h2>
+      <div class="code-block">
+        <div class="line"><span class="num">1</span><span class="content"><span class="cm">// a quick summary, compiled from experience</span></span></div>
+        <div class="line"><span class="num">2</span><span class="content"><span class="kw">struct</span> <span class="fn">Student</span> {</span></div>
+        <div class="line"><span class="num">3</span><span class="content">&nbsp;&nbsp;<span class="kw">string</span> branch <span class="punc">=</span> <span class="str">"CSE — AI & ML"</span>;</span></div>
+        <div class="line"><span class="num">4</span><span class="content">&nbsp;&nbsp;<span class="kw">int</span> year <span class="punc">=</span> <span class="cst">2</span>;</span></div>
+        <div class="line"><span class="num">5</span><span class="content">&nbsp;&nbsp;<span class="kw">string</span> college <span class="punc">=</span> <span class="str">"GL Bajaj Institute of Technology & Management"</span>;</span></div>
+        <div class="line"><span class="num">6</span><span class="content">};</span></div>
+      </div>
+
+      <p class="about-text" style="margin-top:26px;">
+        I'm a CSE (AI &amp; ML) undergrad who enjoys turning logic into working software — comfortable writing
+        <span class="fn">C++</span> for problem-solving and DSA, and building interfaces with
+        <span class="str">HTML</span> &amp; <span class="str">CSS</span>. Currently exploring how AI/ML concepts intersect
+        with practical, everyday systems like the one below.
+      </p>
+
+      <dl class="meta-grid">
+        <dt>College</dt><dd>GL Bajaj Institute of Technology &amp; Management</dd>
+        <dt>Branch</dt><dd>B.Tech CSE — AI &amp; ML</dd>
+        <dt>Year</dt><dd>2nd Year</dd>
+        <dt>Focus</dt><dd>DSA · Web Fundamentals · AI/ML basics</dd>
+      </dl>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2 class="section-title">02 · skills.json</h2>
+
+      <div class="skill-groups">
+        <div>
+          <div class="skill-group-label">core</div>
+          <div class="tag-row">
+            <span class="tag core">C++</span>
+            <span class="tag core">HTML5</span>
+            <span class="tag core">CSS3</span>
+          </div>
+        </div>
+        <div>
+          <div class="skill-group-label">also comfortable with</div>
+          <div class="tag-row">
+            <span class="tag extra">Data Structures &amp; Algorithms</span>
+            <span class="tag extra">Git &amp; GitHub</span>
+            <span class="tag extra">MySQL</span>
+            <span class="tag extra">Java (basics)</span>
+            <span class="tag extra">Linux / Shell basics</span>
+            <span class="tag extra">VS Code</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2 class="section-title">03 · projects.md</h2>
+
+      <div class="project-card">
+        <div class="project-head">
+          <div class="project-title">Student Authentication, Record &amp; Guidance System</div>
+          <div class="project-status">● in progress</div>
+        </div>
+        <p class="project-desc">
+          A centralized system built to securely authenticate students, maintain their academic records, and
+          offer guidance/support based on that data — designed to simplify how student information is managed
+          and accessed within an institution.
+        </p>
+        <ul class="feature-list">
+          <li>Secure student login &amp; authentication flow</li>
+          <li>Centralized academic record storage and retrieval</li>
+          <li>Guidance module to support students using their record data</li>
+          <li>Structured, form-driven interface for ease of use</li>
+        </ul>
+        <div class="stack-row">
+          <span class="tag core">C++</span>
+          <span class="tag core">HTML</span>
+          <span class="tag core">CSS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2 class="section-title">04 · contact.sh</h2>
+
+      <div class="terminal">
+        <div class="terminal-bar"><span></span><span></span><span></span>&nbsp;&nbsp;bash — contact.sh</div>
+        <div class="terminal-body">
+          <div class="row"><span class="prompt">$</span> cat contact.sh</div>
+          <div class="row" style="color:var(--text-dim);">
+            <span class="kw">echo</span> <span class="str">"email:"</span> &nbsp;
+            <a href="mailto:jainsakshar6@gmail.com">jainsakshar6@gmail.com</a>
+          </div>
+          <div class="row" style="color:var(--text-dim);">
+            <span class="kw">echo</span> <span class="str">"phone:"</span> &nbsp;
+            <a href="tel:+919599316869">+91 95993 16869</a>
+          </div>
+          <div class="row" style="color:var(--text-dim);">
+            <span class="kw">echo</span> <span class="str">"college:"</span> &nbsp;GL Bajaj Institute of Technology &amp; Management
+          </div>
+          <div class="row" style="margin-top:14px;"><span class="prompt">$</span> <span class="cursor-blink"></span></div>
+        </div>
+      </div>
+      <p class="copy-hint">Tap the email or phone number above to reach out directly.</p>
+    </section>
+
+    <footer>
+      built with HTML &amp; CSS · Sakshar Jain © 2026
+    </footer>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
